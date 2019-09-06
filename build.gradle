@@ -1,0 +1,19 @@
+allprojects {
+    group 'qcha'
+    version '1.0-SNAPSHOT'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+subprojects {
+    
+    apply plugin: 'java'
+
+    dependencies {
+        compile "com.jayway.jsonpath:json-path:$json_path"
+        testCompile "junit:junit:$junit_version"
+    }
+}

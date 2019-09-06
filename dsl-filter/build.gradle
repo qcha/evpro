@@ -1,0 +1,8 @@
+plugins {
+    id 'scala'
+}
+
+dependencies {
+    compile "org.scala-lang.modules:scala-parser-combinators_2.12:$scala_parser_combinator"
+    compile "org.scala-lang:scala-library:$scala_version"
+}
